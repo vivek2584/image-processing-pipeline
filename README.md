@@ -1,0 +1,23 @@
+# fast image processing pipeline
+fully concurrent fast image downloading + processing pipeline using ImageMagick
+
+---
+
+### how to run :-
+#### 1. place input links in csv file like 
+
+```csv
+url
+https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80
+https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80
+https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80
+```
+
+#### 2. run
+
+```bash
+go mod tidy
+go run . --inputs <path to csv containing links> --outputs outputs
+```
+
+---
